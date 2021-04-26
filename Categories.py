@@ -1,11 +1,16 @@
 import numpy as np
 import pandas as pd
 
-## import datset
+## import dataset
 dataset = pd.read_csv("Batchelor_Degree_Categories.csv")
-
-##sort the dataset by the number of courses in each category
-print(dataset.sort_values("Courses"))
+##use indexing to find how many and which courses are in 10th position
+x = dataset.Subject[10]
+print(x)
+y = dataset.Courses[10]
+print(y)
+## use indexing to show first 10 records
+s = dataset
+print(s[:10])
 
 
 
